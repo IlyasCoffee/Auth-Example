@@ -8,7 +8,7 @@ export default async function Signup(props: { searchParams: Promise<Message> }) 
   const searchParams = await props.searchParams;
 
   return (
-    <main className="bg-secondary center flex-col items-end h-screen w-screen">
+    <main className="bg-secondary center justify-end h-screen w-screen">
       <div className="bg-background center flex-col h-full w-full lg:w-1/2 gap-8 p-8 lg:p-4">
         <div className="center flex-col gap-1">
           <h1>Get Started</h1>

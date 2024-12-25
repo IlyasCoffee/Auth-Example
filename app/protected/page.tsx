@@ -24,7 +24,7 @@ export default async function Protected() {
         </form>
 
         <form className="w-full">
-          <Button variant="secondary" formAction={signOutAction} fullWidth={true}>Delete your account</Button>
+          <Button variant="secondary" fullWidth={true}>Delete your account</Button>
         </form>
       </div>
     </main>

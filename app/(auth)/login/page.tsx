@@ -8,7 +8,7 @@ export default async function Login(props: { searchParams: Promise<Message> }) {
   const searchParams = await props.searchParams;
 
   return (
-    <main className="bg-secondary center flex-col items-end h-screen w-screen">
+    <main className="bg-secondary center justify-end h-screen w-screen">
       <div className="bg-background center flex-col h-full w-full lg:w-1/2 gap-8 p-8 lg:p-4">
         <div className="center flex-col gap-1">
           <h1>Welcome back</h1>
@@ -24,7 +24,7 @@ export default async function Login(props: { searchParams: Promise<Message> }) {
           <label className="center flex-col w-full gap-1 mb-4">
             <p className="mx-2 mr-auto">Password</p>
             <Input placeholder="••••••••••••" type="password" name="password" fullWidth={true} isRequired={true}/>
-            <Link href={"/login"} className="link mx-2 ml-auto">Forget Password?</Link>
+            <Link href={"/forgot-password"} className="link mx-2 ml-auto">Forget Password?</Link>
           </label>
 
           <Button formAction={signInAction} fullWidth={true}>Submit</Button>
