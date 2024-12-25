@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@layer base {
+  * {
+    @apply border-text outline-text;
+  }
+
+  body {
+    @apply bg-background text-text space-mono-regular;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  /* Planing to add a selection color */
+  /* ::selection {} */
+}
+
+@layer components {
+  .link {
+    @apply opacity-60 hover:opacity-100 transition-all;
+  }
+
+  .title {
+    @apply text-6xl font-bold;
+  }
+
+  .center {
+    @apply flex flex-row justify-center items-center;
+  }
+}
