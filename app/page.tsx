@@ -9,11 +9,11 @@ export default function Home() {
 
       <div className="center flex-col w-60 gap-2">
         <Button fullWidth={true}>
-          <Link href={"/login"}>Login</Link>
+          <Link href={"/login"} className="w-full">Login</Link>
         </Button>
 
         <Button variant="secondary" fullWidth={true}>
-          <Link href={"/signup"}>Signup</Link>
+          <Link href={"/signup"} className="w-full">Signup</Link>
         </Button>
       </div>
     </main>

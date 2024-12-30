@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "@/components/button";
 import { redirect } from "next/navigation";
 import { createClient } from "@/utils/supabase/server";
@@ -24,8 +25,10 @@ export default async function Protected() {
         </form>
 
         <form className="w-full">
-          <Button variant="secondary" fullWidth={true}>Delete your account</Button>
+          <Button variant="secondary" fullWidth={true}>Delete account</Button>
         </form>
+
+        <Link href={"/protected/reset-password"} className="link underline">Reset Password</Link>
       </div>
     </main>
   );
