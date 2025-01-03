@@ -9,18 +9,18 @@ export default async function ForgotPassword(props: { searchParams: Promise<Mess
 
   return (
     <main className="center flex-col h-screen w-screen gap-8 p-8 lg:p-4">
-      <div className="center flex-col gap-1">
+      <div className="text-center center flex-col max-w-sm gap-1">
         <h1>Forgot Password</h1>
-        <p className="opacity-40">Input your data to proceed</p>
+        <h3>Type your email to receive a password reset email.</h3>
       </div>
 
       <form className="center flex-col w-full max-w-sm gap-4">
         <label className="center flex-col w-full gap-1">
           <p className="mx-2 mr-auto">Email</p>
-          <Input placeholder="email@example.com" type="email" name="email" fullWidth={true} isRequired={true}/>
+          <Input placeholder="eg. ali@email.com" type="email" name="email" fullWidth={true} isRequired={true}/>
         </label>
 
-        <Button formAction={forgotPasswordAction} fullWidth={true}>Submit</Button>
+        <Button formAction={forgotPasswordAction} fullWidth={true}>Continue</Button>
       </form>
 
       <div className="center gap-4">

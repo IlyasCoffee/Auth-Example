@@ -9,9 +9,9 @@ export default async function ResetPassword(props: { searchParams: Promise<Messa
 
   return (
     <main className="center flex-col h-screen w-screen gap-8 p-8 lg:p-4">
-      <div className="center flex-col gap-1">
+      <div className="text-center center flex-col max-w-sm gap-1">
         <h1>Reset Password</h1>
-        <p className="opacity-40">Input your data to proceed</p>
+        <h3>Try to use a password manager to avoid this situation.</h3>
       </div>
 
       <form className="center flex-col w-full max-w-sm gap-4">
@@ -25,7 +25,7 @@ export default async function ResetPassword(props: { searchParams: Promise<Messa
           <Input placeholder="••••••••••••" type="password" name="confirmPassword" fullWidth={true} isRequired={true}/>
         </label>
 
-        <Button formAction={resetPasswordAction} fullWidth={true}>Submit</Button>
+        <Button formAction={resetPasswordAction} fullWidth={true}>Continue</Button>
       </form>
 
       <div className="center gap-4">
