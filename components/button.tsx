@@ -19,7 +19,7 @@ export default function Button({ variant = 'primary', children, type, formAction
 
   const variantClass = {
     primary: 'bg-text text-background hover:bg-opacity-80',
-    secondary: 'bg-transparent border-opacity-20 border-2',
+    secondary: 'bg-transparent border-opacity-10 border-2',
   };
 
   return (
